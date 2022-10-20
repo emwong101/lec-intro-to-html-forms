@@ -10,6 +10,24 @@ input {
     padding: 0.5rem;
 }
 
-input:required {
-    border-color: red;
+.sign-up-form {
+    &--hidden {
+        display: none;
+    }
+
+    &__submit {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: orange;
+        border: none;
+        border-radius: 0.25rem;
+    }
+
+    &__error-message {
+        padding: 0.25rem 1rem;
+        display: inline-block;
+        background-color: rgba(255, 109, 109, 0.797);
+        color: white;
+    }
 }
